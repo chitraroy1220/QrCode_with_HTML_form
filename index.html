@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <div class="box">
+        <div class="qr-header">
+            <h1>Generate QR Code</h1>
+            
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="middle_name">Middle Name:</label>
+                <input type="text" id="middle_name" name="middle_name" required>
+                <label for="name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required><br>
+               
+                <label for="n"></label>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+            
+                <label for="Mobile_No.">Mobile No.:</label>
+                <input type="Mobile_No" id="Mobile_No" name="Mobile_No" required><br>
+            
+                <label for="PAN _No.">PAN No.:</label>
+                <input type="PAN _No" id="PAN _No" name="PAN _No" required><br>
+
+                <label for="Aadhar_No.">Aadhar No.:</label>
+                <input type="Aadhar_No" id="Aadhar_No" name="Aadhar_No" required><br>
+
+                <label for="Address.">Address:</label>
+                <input type="Address" id="Address" name="Address" required><br>
+            
+                <label for="photo">Photo</label>
+                <input type="file" id="photo" name="photo">
+                
+             
+            <div>
+            <label for="sizes">Select Size:</label>
+            <select id="sizes">
+                <option value="100">100x100</option>
+                <option value="200">200x200</option>
+                <option value="300">300x300</option>
+                <option value="400">400x400</option>
+                <option value="500">500x500</option>
+                <option value="600">600x600</option>
+                <option value="700">700x700</option>
+                <option value="800">800x800</option>
+                <option value="900">900x900</option>
+                <option value="1000">1000x1000</option>
+            </select>
+        </div>
+        </div>
+        <div class="qr-body"></div>
+        <div class="qr-footer">
+            <a href="" id="generateBtn">Generate</a>
+            <a href="" id="downloadBtn">Download</a>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+
+</html>
